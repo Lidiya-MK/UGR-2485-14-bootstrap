@@ -2,80 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay loop muted>
-            <source src="images/fire.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <header>
-            <div >
-                <div>
-                    <img src="images/log.png" alt="logo here">
-                </div>
-                <nav class="navbar">
-                    <a href="home.html">Home</a>
-                    <a href="about-me.html">About Me</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="inspirations.html">Inspirations</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="content">
-                <h1>Welcome to my website</h1>
-                <a href="about-me.html">Explore</a>
-            </div>
-            
-        </main>
-    </div>
-        <footer>
-            <div >
-                <div >
-                    <img src="images/log.png" alt="logo here">
-                    <div>
-                        <p >
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> +251913460116
-                        </p>
-                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
-                    </div>
-                </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                
+                    <img src="images/logo.png" alt="Logo" height="50">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+    
+               
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2">
+                            <a class="text-white fw-bold text-decoration-none hover-yellow" href="home.html">HOME</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="text-white fw-bold text-decoration-none hover-yellow" href="about-me.html">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="text-white fw-bold text-decoration-none hover-yellow " href="hobbies.html">HOBBIES</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="text-white fw-bold text-decoration-none hover-yellow" href="interests.html">INTERESTS</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="text-white fw-bold text-decoration-none hover-yellow" href="inspirations.html">INSPIRATIONS</a>
+                        </li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="text" placeholder="Your message">
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="position-relative overflow-hidden text-center bg-dark">
+            <video autoplay muted loop class="w-100">
+                <source src="images/fire.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+                <h1 class="display-4">Welcome to my Website</h1>
+                <a href="about-me.html" class="btn btn-warning btn-lg text-white fw-bold">Explore</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer bg-dark text-white">
+        <div class="row">
+          
+            <div class="col-lg-4 col-md-6">
+                <div class="footer__logo-column">
+                    <img src="images/logo.png" alt="logo here" class="footer__logo" height="60">
+                    <div class="footer__contact-info">
+                        <p class="footer__email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:lidiyamkt@gmail.com" class="footer__email-link text-white text-decoration-none">Email me</a>
+                        </p>
+                        <p class="footer__linkedin">
+                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
+                        </p>
+                        <p class="footer__telegram">
+                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+                        </p>
+                        <p class="footer__phonenumber">
+                            <i class="fa-solid fa-phone"></i> +251913460116
+                        </p>
+                        <p class="footer__github">
+                            <i class="fa-brands fa-github"></i>github.com/Lidiya-MK
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div>
+    
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="footer__sitemap-column">
+                    <h2 class="footer__sitemap-title">Site Map</h2>
+                    <ul class="footer__site-map">
+                        <li><a href="home.html" class="footer__site-map-link text-white text-decoration-none">Home</a></li>
+                        <li><a href="about-me.html" class="footer__site-map-link text-white text-decoration-none">About Me</a></li>
+                        <li><a href="hobbies.html" class="footer__site-map-link text-white text-decoration-none">Hobbies</a></li>
+                        <li><a href="interests.html" class="footer__site-map-link text-white text-decoration-none">Interests</a></li>
+                        <li><a href="inspirations.html" class="footer__site-map-link text-white text-decoration-none">Inspirations</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+         
+            <div class="col-lg-2 col-md-6">
+                <div class="footer__message-column">
+                    <h2 class="footer__message-title">Message Me</h2>
+                    <input type="text" placeholder="Your name" class="footer__input-1 form-control mb-2">
+                    <input type="email" placeholder="Your email" class="footer__input-1 form-control mb-2">
+                    <input type="text" placeholder="Your message" class="footer__input-2 form-control">
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="col-12 text-center text-white bg-black">
                 &copy; 2023 LMK.com. All Rights Reserved.
             </div>
-        </footer>
- 
+        </div>
+    </footer>
+    
+
+
+
+
+
+   <script src="js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
+
+
